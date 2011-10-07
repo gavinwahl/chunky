@@ -1,0 +1,8 @@
+PUT /upload/<top_hash>/<chunk_id>/
+  size: bytes
+  hashes: all hashes up the tree needed to verify this chunk
+  data: data
+
+GET /upload/<top_hash>/
+  n: int
+  -> first n hashes from the calculated hash tree
